@@ -11,7 +11,19 @@ En este ejercicio debía crear una clase ejecutable que pudiera hacer lo siguien
 - Invocar un método que devuelva toda la información de una tarjeta.
 
 ```
-{
   String informationCard = card.toString();
-}
 ```
+
+Me pareció lo más óptimo simplemente sobreescribir el método ToString dentro de la clase Card:
+
+```
+      @Override
+    public String toString() {
+        return "\n--- Card Information ---" +
+                "\nBrand: " + brand +
+                " \nCardholder: " + cardHolder +
+                " \nCard Number: " + cardNumber +
+                " \nExpiration Date: " + expirationDate;
+    }
+```
+
