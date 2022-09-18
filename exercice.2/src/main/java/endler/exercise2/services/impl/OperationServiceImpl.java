@@ -53,6 +53,13 @@ public class OperationServiceImpl implements OperationService {
         return null;
     }
 
+    public void validations(OperationRequestDTO operationRequestDTO) throws AmountInvalidException, ExpiredCardException {
+        if (!isValidOperation(operationRequestDTO.getAmount())) throw new AmountInvalidException("El monto debe ser menor a 1000 y mayor a 0 para operar.");
+        if (!isValidCardToOperate(cardRepository
+                .findById(operationRequestDTO.getCardId())
+                .orElseThrow(() -> new EntityNotFoundException("Tarjeta no encontrada.")))) throw new ExpiredCardException("La tarjeta ya ha expirado.");
+    }
+
     public boolean isValidOperation(Double amount) {
         return amount < 1000 && amount > 0;
     }
@@ -61,12 +68,7 @@ public class OperationServiceImpl implements OperationService {
         return card.getExpirationDate().isAfter(LocalDate.now());
     }
 
-    public void validations(OperationRequestDTO operationRequestDTO) throws AmountInvalidException, ExpiredCardException {
-        if (!isValidOperation(operationRequestDTO.getAmount())) throw new AmountInvalidException("El monto debe ser menor a 1000 y mayor a 0 para operar.");
-        if (!isValidCardToOperate(cardRepository
-                .findById(operationRequestDTO.getCardId())
-                .orElseThrow(() -> new EntityNotFoundException("Tarjeta no encontrada.")))) throw new ExpiredCardException("La tarjeta ya ha expirado.");
-    }
+
 
 
 }

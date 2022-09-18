@@ -4,7 +4,7 @@ import java.util.stream.Stream;
 public class Main {
     public static void main(String[] args) {
 
-        String [] myArray = {"FirstWord", "SecondWord", "THIRDWORD", "FourThWorD"};
+        String [] myArray = {"FirstWord", "SecondWord", "THIRDWORD", "anOtHeRWorD"};
 
         System.out.println(Stream.of(myArray)
                 .map(String::toLowerCase)

@@ -66,16 +66,14 @@ public class Card {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Card card = (Card) o;
-        return brand == card.brand
-                && Objects.equals(cardNumber, card.cardNumber)
-                && Objects.equals(cardHolder, card.cardHolder)
-                && Objects.equals(expirationDate, card.expirationDate);
+        return Objects.equals(cardNumber, card.cardNumber);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(brand, cardNumber, cardHolder, expirationDate);
+        return Objects.hash(cardNumber);
     }
+
 
     //To String
 
