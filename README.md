@@ -122,3 +122,32 @@ Podemos acceder a una operación ya creada y nos brindará los mismos datos:
 
 (Por alguna razón Postman se me ve con baja calidad, pido disculpas si no se aprecia bien)
 
+Las request cuentan con validaciones como ser que el Cardholder no puede estar vacío:
+
+![image](https://user-images.githubusercontent.com/87986166/190924506-3eca6132-9c4d-4551-b87f-9ec31867004f.png)
+
+También se manejan las respectivas excepciones en caso de que una operación sea inválida (sea mayor a 1000) o que una tarjeta ya haya expirado. Estas excepciones están manejadas a través de un GlobalExceptionHandler, a través del cuál especifico que código de respuesta HTTP quiero retornar:
+
+![image](https://user-images.githubusercontent.com/87986166/190924571-4ac7423b-f41a-4057-a505-fbe7d39a015b.png)
+
+Como se puede ver, creé clases de excepciones específicas para cada tipo de error (Tarjeta expirada, monto incorrecto, marca inexistente, etc), ello para una mejor legibilidad y entendimiento del código.
+
+Este es el save de Operation en el servicio:
+
+![image](https://user-images.githubusercontent.com/87986166/190924649-ff297d06-2a66-4bac-bce6-c0e79d559a80.png)
+
+Y este es el método que valida que todo esté correcto:
+
+![image](https://user-images.githubusercontent.com/87986166/190924697-0a9405c7-76a6-4a03-ab41-d24a6c4d7c9f.png)
+
+No realicé el CRUD completo porque creo que no era necesario para este ejercicio.
+
+## Ejercicio 5
+
+Realizado con programación funcional:
+
+![image](https://user-images.githubusercontent.com/87986166/190924848-1a80b8ad-c5bd-4bc8-af80-3f3607381025.png)
+
+Recorro el array y a cada elemento lo convierto en minúscula, en la parte del map referencio al método toLowerCase() de la clase String, lo cual es lo mismo a: word -> word.toLowerCase()
+Finalizo recolectando con un joining que devuelve un String, y le indico que separe cada palabra con un espacio en blanco.
+
