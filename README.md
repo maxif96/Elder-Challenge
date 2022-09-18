@@ -17,5 +17,5 @@ En este ejercicio debía crear una clase ejecutable que pudiera hacer lo siguien
 Me pareció lo más óptimo simplemente sobreescribir el método ToString dentro de la clase Card:
 
 
-![carbon](https://user-images.githubusercontent.com/87986166/190922150-ea8049a0-8ba3-4e71-a636-0480af4f5665.png)
+![carbon(1)](https://user-images.githubusercontent.com/87986166/190922169-c9ebcb4d-8702-417b-bb5b-3602802f38c6.png)
 
