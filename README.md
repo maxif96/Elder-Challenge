@@ -66,7 +66,7 @@ Llamando al método:
 
 Otra forma de hacerlo, sería que la clase Operation tuviera un atributos más, el total, entonces, en vez de devolver un String, devolveríamos un objeto Operación con todos los datos.
 
-Resultado:
+### Resultado:
 
 Dado estos objetos 
 
