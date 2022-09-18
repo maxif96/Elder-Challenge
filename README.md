@@ -66,3 +66,21 @@ Llamando al método:
 ![image](https://user-images.githubusercontent.com/87986166/190923091-f6c8c131-e5d5-4e29-b042-adee7b8063e1.png)
 
 Otra forma de hacerlo, sería que la clase Operation tuviera un atributos más, el total, entonces, en vez de devolver un String, devolveríamos un objeto Operación con todos los datos.
+
+Resultado:
+
+Dado estos objetos 
+
+![image](https://user-images.githubusercontent.com/87986166/190923367-ef706834-b702-4814-b854-8c18cce1cd2b.png)
+
+Obtendremos lo siguiente por pantalla:
+
+![image](https://user-images.githubusercontent.com/87986166/190923392-35302b83-9251-4fa9-a4af-534988055023.png)
+
+A través de operaciones ternarias, se imprimirá una cosa u otra:
+
+![image](https://user-images.githubusercontent.com/87986166/190923512-4ce2c0eb-57fb-4714-afbb-fc5765162979.png)
+
+
+También podríamos lanzar una excepción en caso de que una operación no sea válida o la tarjeta haya expirado:
+
