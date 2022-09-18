@@ -79,7 +79,7 @@ Obtendremos lo siguiente por pantalla:
 
 A través de operaciones ternarias, se imprimirá una cosa u otra:
 
-![image](https://user-images.githubusercontent.com/87986166/190923512-4ce2c0eb-57fb-4714-afbb-fc5765162979.png)
+![image](https://user-images.githubusercontent.com/87986166/190923548-be6b14d1-9394-40e4-a137-44f66c6f1177.png)
 
 
 También podríamos lanzar una excepción en caso de que una operación no sea válida o la tarjeta haya expirado:
