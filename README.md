@@ -81,6 +81,11 @@ A través de operaciones ternarias, se imprimirá una cosa u otra:
 
 ![image](https://user-images.githubusercontent.com/87986166/190923548-be6b14d1-9394-40e4-a137-44f66c6f1177.png)
 
+Esto es ilustrativo, es decir, si la operación no es valida solamente se está informando por pantalla, pero podríamos lanzar una excepción para abortar la ejecución de la operación:
 
-También podríamos lanzar una excepción en caso de que una operación no sea válida o la tarjeta haya expirado:
+![image](https://user-images.githubusercontent.com/87986166/190923674-9671ffa8-df3f-435c-86d8-eba77c7e6129.png)
+
+
+![image](https://user-images.githubusercontent.com/87986166/190923651-d1e746e8-521d-4821-97e8-63985a9c28b6.png)
+
 
