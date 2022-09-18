@@ -10,9 +10,8 @@ En este ejercicio debía crear una clase ejecutable que pudiera hacer lo siguien
 
 - Invocar un método que devuelva toda la información de una tarjeta.
 
-```
-  String informationCard = card.toString();
-```
+![image](https://user-images.githubusercontent.com/87986166/190923720-a1b6b8ee-c50a-422e-a8e5-322a2b752faf.png)
+
 
 Me pareció lo más óptimo simplemente sobreescribir el método ToString dentro de la clase Card:
 
