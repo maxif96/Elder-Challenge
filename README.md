@@ -114,7 +114,7 @@ Para hacerlo, necesitamos mandar un JSON con el id de la tarjeta que va a operar
 
 ![image](https://user-images.githubusercontent.com/87986166/190924340-3f7fbc34-18fc-4784-90c4-253725dcb8f7.png)
 
-Como podemos ver, solo en la respuesta a la creación de una operación obtenemos la tasa de la operación, marca de la tarjete, importe e importe total.
+Como podemos ver, solo en la respuesta a la creación de una operación obtenemos la tasa de la operación, marca de la tarjeta, importe e importe total.
 
 Podemos acceder a una operación ya creada y nos brindará los mismos datos:
 
