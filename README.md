@@ -22,3 +22,8 @@ Me pareció lo más óptimo simplemente sobreescribir el método ToString dentro
 - Informar si una operación es válida.
 
 ![image](https://user-images.githubusercontent.com/87986166/190922464-9e151d42-3933-4b9d-aa80-3c9a3899de73.png)
+
+Para eso creé un método que valide si una operación es válida dentro del servicio llamado OperationService. Este método se ve así:
+
+![image](https://user-images.githubusercontent.com/87986166/190922520-982a7caf-826b-4ea6-b568-cf8e1d641bf6.png)
+
