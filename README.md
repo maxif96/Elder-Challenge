@@ -17,7 +17,7 @@ En este ejercicio debía crear una clase ejecutable que pudiera hacer lo siguien
 Me pareció lo más óptimo simplemente sobreescribir el método ToString dentro de la clase Card:
 
 
-![carbon(4)](https://user-images.githubusercontent.com/87986166/190922395-83fa29f7-07df-4bf3-a930-8d00df20dbc3.png)
+![image](https://user-images.githubusercontent.com/87986166/190922577-a66343ea-b010-43ae-9ac7-9a74f1b61ce0.png)
 
 - Informar si una operación es válida.
 
@@ -25,5 +25,5 @@ Me pareció lo más óptimo simplemente sobreescribir el método ToString dentro
 
 Para eso creé un método que valide si una operación es válida dentro del servicio llamado OperationService. Este método se ve así:
 
-![image](https://user-images.githubusercontent.com/87986166/190922520-982a7caf-826b-4ea6-b568-cf8e1d641bf6.png)
+![image](https://user-images.githubusercontent.com/87986166/190922563-285b5858-980a-4005-bec9-b6b387d1ffce.png)
 
