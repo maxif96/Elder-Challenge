@@ -18,4 +18,4 @@ Me pareció lo más óptimo simplemente sobreescribir el método ToString dentro
 
 
 
-![carbon(2)](https://user-images.githubusercontent.com/87986166/190922255-0a5b5ae2-9760-47cc-b53a-577357924c07.png)
+![carbon(3)](https://user-images.githubusercontent.com/87986166/190922294-8de22e49-1888-4647-a72e-bca4a5ca08a5.png)
