@@ -151,3 +151,6 @@ Realizado con programación funcional:
 Recorro el array y a cada elemento lo convierto en minúscula, en la parte del map referencio al método toLowerCase() de la clase String, lo cual es lo mismo a: word -> word.toLowerCase()
 Finalizo recolectando con un joining que devuelve un String, y le indico que separe cada palabra con un espacio en blanco.
 
+Resultado:
+
+![image](https://user-images.githubusercontent.com/87986166/190925087-c664865f-6553-48d8-bbc2-fc460245de7c.png)
