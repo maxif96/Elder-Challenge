@@ -18,3 +18,7 @@ Me pareció lo más óptimo simplemente sobreescribir el método ToString dentro
 
 
 ![carbon(4)](https://user-images.githubusercontent.com/87986166/190922395-83fa29f7-07df-4bf3-a930-8d00df20dbc3.png)
+
+- Informar si una operación es válida.
+
+![image](https://user-images.githubusercontent.com/87986166/190922464-9e151d42-3933-4b9d-aa80-3c9a3899de73.png)
