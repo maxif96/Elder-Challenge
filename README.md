@@ -16,14 +16,5 @@ En este ejercicio debía crear una clase ejecutable que pudiera hacer lo siguien
 
 Me pareció lo más óptimo simplemente sobreescribir el método ToString dentro de la clase Card:
 
-```
-      @Override
-    public String toString() {
-        return "\n--- Card Information ---" +
-                "\nBrand: " + brand +
-                " \nCardholder: " + cardHolder +
-                " \nCard Number: " + cardNumber +
-                " \nExpiration Date: " + expirationDate;
-    }
-```
+
 
