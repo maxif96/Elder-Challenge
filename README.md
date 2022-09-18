@@ -6,6 +6,12 @@ Voy a tratar de explicar un poco como funciona lo que hice, y explicar el por qu
 
 ## Ejercicio 1
 
+El tema de los intereses lo trabajé con un Enum de la siguiente manera:
+
+![image](https://user-images.githubusercontent.com/87986166/190923937-fb82d89c-a342-46a7-b7f8-781bcefc0ba5.png)
+
+Así, el programa es escalable con el tiempo, ya que si se quieren agregar más marcas, solamente habría que añadirlas en este Enum, junto con su respectiva forma de calcular la tasa de interés.
+
 En este ejercicio debía crear una clase ejecutable que pudiera hacer lo siguiente: 
 
 - Invocar un método que devuelva toda la información de una tarjeta.
@@ -87,4 +93,32 @@ Esto es ilustrativo, es decir, si la operación no es valida solamente se está 
 
 ![image](https://user-images.githubusercontent.com/87986166/190923651-d1e746e8-521d-4821-97e8-63985a9c28b6.png)
 
+
+## Ejercicio 2
+
+Debía crear una API Rest que reciba y responda en formato JSON, que permita consultar la tasa de una operación, informando marca de la tarjeta e importe.
+
+Estructura:
+
+![image](https://user-images.githubusercontent.com/87986166/190924004-cb16c45f-b50c-482d-b5e7-fec31ad2db37.png)
+
+Creé dos entidades, Card y Operation, junto con un Enum para las marcas de las tarjetas y sus intereses
+
+Card y Operation tienen una relación de ManyToOne, es decir una tarjeta puede realizar muchas operaciones, a su vez, una operación solo opera con una tarjeta.
+
+Para poder consultar la tasa de una operación, junto con la tarjeta y el importe, es necesario que esté creada esa operación, así que creé un endpoint en OperationController que recibe un OperationRequestDTO que será guardado, y devuelve un OperationResponseDTO. Pero antes de crear una operación, es necesario haber creado una tarjeta primero para indicarle a la operación con qué tarjeta se operará, así que hice lo propio en CardController.
+
+Así que veamos como se ve crear una operación en Postman: 
+
+Para hacerlo, necesitamos mandar un JSON con el id de la tarjeta que va a operar, junto con el monto:
+
+![image](https://user-images.githubusercontent.com/87986166/190924340-3f7fbc34-18fc-4784-90c4-253725dcb8f7.png)
+
+Como podemos ver, solo en la respuesta a la creación de una operación obtenemos la tasa de la operación, marca de la tarjete, importe e importe total.
+
+Podemos acceder a una operación ya creada y nos brindará los mismos datos:
+
+![image](https://user-images.githubusercontent.com/87986166/190924435-6732e81e-3197-4cdf-87d7-5ccdf96481ea.png)
+
+(Por alguna razón Postman se me ve con baja calidad, pido disculpas si no se aprecia bien)
 
