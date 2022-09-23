@@ -6,11 +6,15 @@ Voy a tratar de explicar un poco como funciona lo que hice, y explicar el por qu
 
 ## Ejercicio 1
 
-El tema de los intereses lo trabajé con un Enum de la siguiente manera:
+Antes de ir de lleno al ejercicio quería especificar lo siguiente: Se me pedía tener en cuenta como las distintas tarjetas de crédito calculaban los intereses de distintas formas. Lo trabajé de la siguiente manera:
 
 ![image](https://user-images.githubusercontent.com/87986166/190923937-fb82d89c-a342-46a7-b7f8-781bcefc0ba5.png)
 
 Así, el programa es escalable con el tiempo, ya que si se quieren agregar más marcas, solamente habría que añadirlas en este Enum, junto con su respectiva forma de calcular la tasa de interés.
+
+Ahora si, paso a explicar el ejercicio.
+
+
 
 En este ejercicio debía crear una clase ejecutable que pudiera hacer lo siguiente: 
 
